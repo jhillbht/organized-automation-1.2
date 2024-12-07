@@ -1,0 +1,99 @@
+:root {
+  --dark-100: #13111C;
+  --dark-200: #17151F;
+  --dark-300: #1C1A24;
+  --primary-400: #9361fc;
+  --primary-500: #7c3aed;
+  --gray-400: #7B7B7B;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--dark-100);
+  color: white;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  fill: none;
+  stroke: var(--primary-400);
+  stroke-width: 2;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  color: var(--primary-400);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stat-card {
+  background: var(--dark-200);
+  border: 1px solid var(--dark-300);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+  color: var(--gray-400);
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid var(--dark-300);
+  background: var(--dark-200);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--dark-300);
+}
+
+.btn.primary {
+  grid-column: 1 / -1;
+  background: var(--primary-500);
+  border-color: var(--primary-500);
+}
+
+.btn.primary:hover {
+  background: var(--primary-400);
+}

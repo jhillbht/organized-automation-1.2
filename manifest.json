@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Organized Automation",
+  "version": "1.0.0",
+  "description": "GTM & GA4 Management Dashboard",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  }
+}

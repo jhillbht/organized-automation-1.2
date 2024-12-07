@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organized Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path>
+          <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path>
+        </svg>
+        <h1>Organized Automation</h1>
+      </div>
+    </header>
+    <main>
+      <div class="stats">
+        <div class="stat-card" id="containers">
+          <h3>GTM Containers</h3>
+          <p class="value">0</p>
+        </div>
+        <div class="stat-card" id="properties">
+          <h3>GA4 Properties</h3>
+          <p class="value">0</p>
+        </div>
+        <div class="stat-card" id="tags">
+          <h3>Active Tags</h3>
+          <p class="value">0</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="audit" class="btn">Audit</button>
+        <button id="compare" class="btn">Compare</button>
+        <button id="add" class="btn primary">Add Account</button>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

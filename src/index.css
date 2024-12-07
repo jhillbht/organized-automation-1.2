@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-100 text-white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-400;
+}
+
+input[type="checkbox"] {
+  @apply rounded border-dark-400 bg-dark-300 text-primary-500 focus:ring-primary-500 focus:ring-offset-dark-200;
+}
